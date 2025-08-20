@@ -32,11 +32,8 @@ public class Cargo {
     }
 
     public Cargo setIsItPossibleToFlip(boolean isItPossibleToFlip) {
-        String flip = isItPossibleToFlip == true ?
-                "да" : "нет";
         return new Cargo(dimensions, weight, deliveryAddress, isItPossibleToFlip,
                 registrationNumber, isTheCargoFragile);
-
     }
 
     public Cargo setRegistrationNumber(String registrationNumber) {
@@ -75,17 +72,15 @@ public class Cargo {
 
     @Override
     public String toString() {
-        String answerFlip = isItPossibleToFlip == true ?
-                "да" : "нет";
-        String answerFragile = isTheCargoFragile == true ?
-                "да" : "нет";
-        return "характеристики груза:" + "\n" +
-                "габариты = " + dimensions + "\n" +
-                "вес = " + weight + "\n" +
-                "адрес доставки = " + deliveryAddress + "\n" +
-                "можно ли переворачевать? = " + answerFlip + "\n" +
-                "регистрационный номер = " + registrationNumber + "\n" +
-                "хрупкий? = " + answerFragile + "\n";
-
+        String answerFlip = isItPossibleToFlip ? "yes" : "no";
+        String answerFragile = isTheCargoFragile ? "yes" : "no";
+        return "Cargo characteristics:" + "\n" +
+                "dimensions = " + dimensions + "\n" +
+                "weight = " + weight + "\n" +
+                "delivery address = " + deliveryAddress + "\n" +
+                "can it be flipped? = " + answerFlip + "\n" +
+                "registration number = " + registrationNumber + "\n" +
+                "fragile? = " + answerFragile + "\n";
     }
 }
+
