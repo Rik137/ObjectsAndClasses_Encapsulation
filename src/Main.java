@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-//задача№2
+//task№2
 
         Dimensions dimensions = new Dimensions(130, 120, 30);
         Cargo cargo = new Cargo(dimensions, 100, "Moscow", true,
@@ -20,7 +20,7 @@ public class Main {
         System.out.println(cargo3);
         System.out.println("\n" + "\n");
 //===========================================================================================
-//задача№1
+//task№1
 
         Elevator elevator = new Elevator(-3, 26);
         while (true) {
