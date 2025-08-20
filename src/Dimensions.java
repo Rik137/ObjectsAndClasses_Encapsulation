@@ -39,8 +39,7 @@ public class Dimensions {
 
     @Override
     public String toString() {
-        return "габариты: высота " + height + " ,длинна " + length + " ,ширина " + width + "." + "\n" +
-                "объем груза " + cargoVolumeCalculations(height, length, width);
-
-    }
+         return "dimensions: height = " + height + ", length = " + length + ", width = " + width + "." + "\n" +
+              "cargo volume = " + cargoVolumeCalculations(height, length, width);
+   }
 }
