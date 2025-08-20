@@ -15,20 +15,20 @@ public class Elevator {
     public int moveDown() {
         int result = getСurrentFloor() - 1;
         setСurrentFloor(result);
-        System.out.println(result + " -> этаж");
+        System.out.println(result + " -> floor");
         return result;
     }
     public int moveUp() {
         int result = getСurrentFloor() + 1;
         setСurrentFloor(result);
-        System.out.println(result + " -> этаж");
+        System.out.println(result + " -> floor");
         return result;
     }
     public void move(int floor) {
         if (floor == getСurrentFloor()) {
-            System.out.println("мы на этом этаже " + getСurrentFloor());
+            System.out.println("we are already on this floor " + getСurrentFloor());
         } else if (floor > maxFloor || floor < minFloor) {
-            System.out.println("этажа " + floor + " не существует");
+            System.out.println("floor " + floor + " does not exist");
         } else {
             if (floor > getСurrentFloor()) {
                 for (int i = getСurrentFloor(); i < floor; i++) {
