@@ -7,7 +7,7 @@ public class Main {
 //task№2
 
         Dimensions dimensions = new Dimensions(130, 120, 30);
-        Cargo cargo = new Cargo(dimensions, 100, "Moscow", true,
+        Cargo cargo = new Cargo(dimensions, 100, "New Yourk", true,
                 "12357rsdc54", false);
         Dimensions dimensions1 = dimensions.setHeight(100);
         Cargo cargo1 = cargo.setDimensions(dimensions1);
@@ -16,7 +16,7 @@ public class Main {
         Cargo cargo2 = cargo.setWeight(50);
         System.out.println(cargo2);
 
-        Cargo cargo3 = cargo1.setDeliveryAddress("Saratov");
+        Cargo cargo3 = cargo1.setDeliveryAddress("Boston");
         System.out.println(cargo3);
         System.out.println("\n" + "\n");
 //===========================================================================================
