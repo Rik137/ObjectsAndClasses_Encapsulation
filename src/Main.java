@@ -24,7 +24,7 @@ public class Main {
 
         Elevator elevator = new Elevator(-3, 26);
         while (true) {
-            System.out.print("Введите номер этажа: ");
+            System.out.print("inter the number of floor: ");
             int floor = new Scanner(System.in).nextInt();
             elevator.move(floor);
         }
